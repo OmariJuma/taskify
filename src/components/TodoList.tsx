@@ -9,7 +9,8 @@ interface Props{
 }
 function TodoList({todos, setTodos}: Props) {
   return (
-    <div className='todos'>
+    <div className="container">
+      <div className='todos'>
         {
             todos.map((todo)=>(
                 <SingleTodo 
@@ -21,6 +22,7 @@ function TodoList({todos, setTodos}: Props) {
 
             ))
         }
+    </div>
     </div>
   )
 }
